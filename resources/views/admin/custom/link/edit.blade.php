@@ -1,0 +1,65 @@
+@extends('admin.layout.master')
+@section('head-tag')
+    <title>ویرایش </title>
+@endsection
+@section('breadcrumb')
+    <li class="breadcrumb-item active">ویرایش </li>
+@endsection
+
+@section('content')
+
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item font-size-12"> <a href="#">خانه</a></li>
+            <li class="breadcrumb-item font-size-12"> <a href="#"> تنظیمات</a></li>
+            <li class="breadcrumb-item font-size-12 active" aria-current="page"> ویرایش تنظیمات</li>
+        </ol>
+    </nav>
+
+
+    <section class="row">
+        <section class="col-12">
+            <section>
+                <section class="main-body-container-header">
+                    <h5>
+                        ویرایش تنظیمات
+                    </h5>
+                </section>
+
+                <section class="d-flex justify-content-between align-items-center mt-4 mb-3 border-bottom pb-2">
+                    <a href="{{ route('admin.custom.link.index') }}" class="btn btn-info btn-sm">بازگشت</a>
+                </section>
+
+                <section>
+                    <form action="{{ route('admin.custom.link.update', $link->id) }}" method="post">
+                        @csrf
+                        {{ method_field('put') }}
+                        <section class="row">
+
+                            <section class="col-12">
+                                <div class="form-group">
+                                    <label for="link"> لینک</label>
+                                    <input type="text" class="form-control form-control-sm" name="link" id="link"
+                                        value="{{ old('link', $link->link) }}">
+                                </div>
+                                @error('link')
+                                    <span class=" bg-danger text-white p-1 rounded" role="alert">
+                                        <strong>
+                                            {{ $message }}
+                                        </strong>
+                                    </span>
+                                @enderror
+                            </section>
+                            <section class="col-12 my-3">
+                                <button class="btn btn-primary btn-sm">ثبت</button>
+                            </section>
+                        </section>
+                    </form>
+                </section>
+
+            </section>
+        </section>
+    </section>
+
+@endsection

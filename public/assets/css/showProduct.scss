@@ -1,0 +1,477 @@
+@import "files/color";
+
+$colorgray: #a4a4a4;
+@font-face {
+  font-family: 'myfont';
+  src: url('../fonts/IRANSansWeb.ttf') format('tff')  , url('../fonts/IRANSansWeb.woff') format('woff');
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  font-family: myfont;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+  &:hover{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.clear {
+  clear:both;
+}
+body , html {
+  direction:rtl;
+  height: 100%;
+  //background: linear-gradient(90deg, #373b44 0%, rgba(66, 134, 244, 0.4) 50%, rgba(0, 212, 255, 0.2) 100%);
+
+}
+
+$colorzard:#e6e600;
+
+// reset css
+
+.main{
+ background-color: #f0f0f1;
+  padding: 10px;
+}
+.timer_product_offer{
+  border-bottom: 1px solid red;
+  color: red;
+  font-size: 15px;
+  height: 50px;
+  margin-bottom: 35px;
+}
+
+.img-zoom-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.img-zoom-lens {
+  position: absolute;
+  /*set the size of the lens:*/
+  width: 113.281px;
+  height: 124.609px;
+  cursor: crosshair;
+  border:none;
+
+}
+
+.img-zoom-result {
+  border: 1px solid black;
+  /*set the size of the result div:*/
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 3;
+}
+#myresult{
+  visibility: hidden;
+}
+#myimage{
+  height: 300px;
+  width: 300px;
+}
+.icon_product{
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+//=================> slider image product
+.gallery{
+  margin: 20px 10px;
+  padding: 10px;
+  img{
+    width: 20%;
+    border-radius: 10px;
+  }
+}
+#theImg{
+  display: inline;
+  opacity: .5;
+  position: absolute;
+}
+.tozih-p{
+  margin-left: 5px;
+  display: inline;
+  color: $range-abieAsemani;
+}
+.product_details{
+    list-style: none;
+   li::before {
+     font-size: 25px;
+     vertical-align: sub;
+    content: "\2022";
+    color: #a4a4a4;
+    display: inline-block;
+    width: 1em;
+    margin-right: -1em;
+  }
+}
+.product_price{
+  background-color: #eeeeee;
+  border: 2px solid #a4a4a4;
+  border-radius: 15px;
+  padding: 10px;
+  overflow: hidden;
+}
+.granty{
+  margin: 20px;
+  border-bottom: 3px solid silver;
+  height: 50px;
+
+  i{
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  p{
+    font-weight: bold;
+    display: inline;
+
+  }
+}
+.off_price{
+  color: $red-amazing;
+  text-decoration: line-through;
+  font-size: 15px;
+  float: left;
+  margin-left: 20px;
+}
+.sell_price{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.off_percent{
+  border-radius: 20px;
+  font-size: 17px;
+  float: left;
+  margin-left: 10px;
+  line-height: 28px;
+  background: $warning;
+  height: 34px;
+  color: #fff;
+  padding: 5px 27px;
+  letter-spacing: 2px;
+}
+.mojodi{
+  margin: 10px;
+  color: $red-amazing;
+  span{
+    font-size: 12px;
+    vertical-align: middle;
+  }
+}
+.quantity{
+  padding: 10px;
+  background: white;
+  width: 100px;
+  display: inline-block;
+  border: 2px solid #a4a4a4;
+  height: 50px;
+  border-radius: 43px;
+  font-size: 19px;
+  span{
+    width: 25px;
+    font-weight: bold;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+  }
+  input{
+    width: 60px;
+  }
+}
+#add_to_basket{
+
+  color: white;
+  height: 50px;
+  padding: 12px;
+  display: inline;
+  float: left;
+  background: $warning;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+
+//============================> entekhab rang
+.box{
+  position: relative;
+  display: unset;
+  //top: 50%;
+  //left: 50%;
+  transform: translate(-50%,-50%);
+  //width: 400px;
+  //padding: 20px;
+  //background: whitesmoke;
+  //color: #fff;
+  text-align: center;
+  //box-shadow: 0 10px 30px rgba(0,0,0,1);
+  //border-radius: 5px;
+  //font-size: 20px;
+  overflow: hidden;
+}
+.box:before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  transform: skewX(-3deg);
+}
+.box p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+}
+.box label{
+  position: relative;
+  cursor: pointer;
+}
+.box label input {
+  display: none;
+}
+.box label span{
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 5px;
+  width: 80px;
+  /*background: #000;*/
+  border: 1px solid #444;
+  color: #444;
+  border-radius: 10px;
+}
+.box label input:checked ~ span{
+  color: white;
+  border: 1px solid #008eff;
+}
+.box label input:checked ~ span:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #008eff;
+  z-index: -1;
+  filter:blur(10px);
+}
+.box label input:checked ~ span:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #008eff;
+  z-index: -1;
+  filter:blur(15px);
+}
+
+.box label input:checked~span.yes{
+  color: wheat;
+  border-color: #343434;
+  box-shadow: inset 0 0 10px #343434;
+}
+.box label input:checked~ span.yes:after ,
+.box label input:checked~ span.yes:before{
+  background: #343434;
+}
+
+.box label input:checked~span.no{
+  border-color: red;
+  color: wheat;
+  box-shadow: inset 0 0 10px red;
+}
+.box label input:checked~span.no:after ,
+.box label input:checked~span.no:before{
+  background: red;
+}
+//============================> end
+.naghd_o_barrasi{
+  display: grid;
+  padding: 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(0 ,0 ,0 , 0.08);
+
+  .nav-item{
+    a {
+      color: black;
+      }
+    .active{
+      color: $range-abieAsemani;
+      border-top: 2px solid $range-abieAsemani;
+    }
+  }
+  .tab-content{
+    background: white;
+  }
+}
+.title_naghd-o-barrasi{
+ margin-bottom: 30px;
+  span{
+    font-size: 14px;
+  }
+}
+#img_tabbar{
+  width: 150px;
+  margin: 50px 20px;
+}
+#tozihat_mahsol{
+  color: #404040;
+  font-size: 15px;
+  line-height: 2;
+}
+#myBtn{
+  color: $range-abieAsemani;
+  text-decoration: underline dotted red;
+  cursor: pointer;
+}
+.moshakhast{
+  display: block;
+  margin-top: 30px;
+  i{
+    color: $range-abieAsemani;
+    font-size: 25px;
+    vertical-align: middle;
+  }
+}
+.zirShakhe_moshakhasat{
+  margin: 10px;
+
+  li{
+    display: flex;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+}
+.span_left
+{
+  background: #fafafa;
+  -ms-flex: 0 0 73%;
+  flex: 0 0 73%;
+  width: 73%;
+  height: auto;
+  float: right;
+  color: #4d4d4d;
+  padding: 14px 18px;
+  border-radius: 28px 0 0 28px;
+  line-height: 20px;
+}
+.span_right{
+  float: right;
+  background: #fafafa;
+  -ms-flex: 0 0 22%;
+  flex: 0 0 22%;
+  width: 22%;
+  height: auto;
+  margin-left: 19px;
+  color: #4d4d4d;
+  padding: 14px 18px;
+  border-radius: 0 28px 28px 0;
+  line-height: 20px;
+}
+.font-12{
+  padding: 20px;
+  font-size: 12px;
+  background: #dee2e6;
+  border-radius: 10px;
+  .progress-bar{
+    background: $warning;
+  }
+}
+#btn_nazarat{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+  line-height: 60px;
+  text-decoration: none;
+  svg,svg rect{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+  }
+  svg rect{
+    stroke: $range-abieAsemani;
+    stroke-width: 4;
+    transition: 2s;
+    stroke-dasharray: 60 ,200;
+    stroke-dashoffset: 320;
+
+  }
+  &:hover svg rect{
+    stroke: #ff0d00;
+    stroke-dasharray:200, 60;
+    stroke-dashoffset: 0;
+
+  }
+}
+.show_nazarat{
+  margin-top: 100px;
+  border-top: 3px solid rgba(0, 0, 0, 0.08);
+  padding: 20px;
+
+}
+.box_nazarat{
+  background: $rang-tire;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 20px 0;
+  .by{
+    font-size: 14px;
+    font-weight: bold;
+    color: #adb5bd;
+  }
+}
+.noghat_ghovat{
+  float: right;
+  color: #4cae4c;
+}
+.noghat_ghovat_list{
+  float: right;
+  color: #adb5bd;
+  margin-right: 33px;
+}
+.sticky {
+  background: white;
+  height: auto;
+  display: flex !important;
+  position: fixed;
+  width: 100%;
+  right:12px;
+  top: 0;
+  z-index: 9999999;
+  border-top: 0;
+}
+.add-comment-text{
+  display: inline-grid;
+}
+.delete-point{
+  padding: 3px;
+  font-size: 10px;
+}

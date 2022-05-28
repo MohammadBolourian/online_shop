@@ -1,0 +1,128 @@
+.GoToTop {
+  width: 100%;
+  height: 100px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.GoToTop i {
+  vertical-align: middle;
+  line-height: 100px;
+  display: inline;
+  font-size: 50px;
+  color: gray;
+}
+.GoToTop p {
+  font-size: 25px;
+  color: black;
+  display: inline;
+}
+
+.footer {
+  background-color: #e4e9eb;
+  border-top: 1px solid #818688;
+  padding: 10px 20px;
+}
+.footer #row1 {
+  margin: 10px 30px;
+  text-align: center;
+}
+.footer #row1 img {
+  margin-top: 50px;
+  width: 25%;
+  height: 40%;
+}
+.footer #row1 p {
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+.part2 {
+  color: #a8adaf;
+  margin: 20px 60px;
+}
+.part2 #row {
+  border-top: 1px solid #818688;
+}
+.part2 #row .col-8, .part2 #row .col-4 {
+  margin-top: 30px;
+}
+
+.emailEdit {
+  width: 75%;
+  color: #a8adaf;
+  display: inline-flex;
+  text-align: center;
+}
+.emailEdit ::placeholder {
+  color: #a8adaf;
+}
+.emailEdit input {
+  height: 50px;
+}
+.emailEdit .btn {
+  width: 100px;
+  background-color: #00bfd6;
+}
+
+.icon-footer {
+  font-size: 30px;
+  margin-top: 40px;
+}
+.icon-footer i {
+  cursor: pointer;
+  margin: 5px;
+}
+.icon-footer i:hover {
+  color: black;
+}
+
+#link_footer {
+  border-top: 1px solid #818688;
+}
+#link_footer .col {
+  margin-top: 15px;
+}
+#link_footer .col p {
+  font-size: 20px;
+}
+#link_footer .col b {
+  font-size: 17px;
+  margin-left: 30px;
+}
+#link_footer .col img {
+  display: inline-block;
+  width: 170px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.footer_text {
+  line-height: 2;
+  color: #53535375;
+  padding: 30px;
+  background-color: #d7dee0;
+}
+.footer_text .col-5 {
+  display: inline-flex;
+  justify-content: center;
+}
+.footer_text img {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #e5e5ea;
+}
+
+.copy_right {
+  background-color: #d7dee0;
+  border-top: 1px solid #818688;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,17 @@
+$mybg:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+$darkocean:linear-gradient(0deg, rgba(55,59,68,1) 0%, rgba(66,134,244,0.4) 50%, rgba(0,212,255,0.2) 100%);
+$darkocean2:linear-gradient(90deg, rgba(55,59,68,1) 0%, rgba(66,134,244,1) 78%, rgba(0,212,255,1) 100%);
+
+$warning: linear-gradient(90deg, rgba(241,39,17,1) 0%, rgba(245,175,25,1) 73%, rgba(253,200,48,1) 100%);
+$success:linear-gradient(90deg, rgba(82,194,52,1) 0%, rgba(6,23,0,1) 100%);
+$danger:linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(221,24,24,1) 100%);
+$colors2:
+        "primary"#fff $darkocean #337ab7 #2c5a96,
+"sucsess" #fff  $success #d6e9c6 #168002,
+"warning" #fff $warning #faebcc #ab6800,
+"danger" #fff  $danger #ebccd1 #a30a17;
+$rang-tire:#f0f0f1;
+$red-amazing:rgb(239, 57, 78);
+$range-abieAsemani:#00bfd6;
+$dashboradbg:#36363e;
+$dashborad-primary:#2c2c34;
