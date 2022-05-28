@@ -31,7 +31,7 @@
 
 <p align="center"><img src="https://i.postimg.cc/sVQrPLtF/92.jpg" width="600"></p>
 
-<p align="center"><img src="https://i.postimg.cc/9mXNt88P/96.jpg" width="600"></p>
+<p align="center"><img src="https://i.postimg.cc/rFWN1xS2/yesw.jpg" width="600"></p>
 
 <p align="center"><img src="https://i.postimg.cc/RZWjR3p1/91.jpg" width="600"></p>
 
